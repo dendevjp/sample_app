@@ -15,6 +15,8 @@ gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'bootstrap-sass',          '3.3.7'
 gem 'jquery-rails',            '4.3.1'
+gem 'paranoia'                 
+gem "select2-rails"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

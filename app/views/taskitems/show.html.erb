@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Itemid:</strong>
+  <%= @taskitem.itemid %>
+</p>
+
+<p>
+  <strong>Itemstatus:</strong>
+  <%= @taskitem.itemstatus %>
+</p>
+
+<p>
+  <strong>Itemtitle:</strong>
+  <%= @taskitem.itemtitle %>
+</p>
+
+<p>
+  <strong>Itemdetail:</strong>
+  <%= @taskitem.itemdetail %>
+</p>
+
+<p>
+  <strong>Itemcharge:</strong>
+  <%= @taskitem.itemcharge %>
+</p>
+
+<%= link_to '編集', edit_taskitem_path(@taskitem) %> |
+<%= link_to '一覧に戻る', taskitems_path %> |
+<%= link_to '新規登録', new_taskitem_path %>

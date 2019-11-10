@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Taskitems</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>障害番号</th>
+      <th>ステータス</th>
+      <th>タイトル</th>
+      <th>詳細</th>
+      <th>担当者</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @taskitems.each do |taskitem| %>
+      <tr>
+        <td><%= taskitem.itemid %></td>
+        <td><%= conversion_status taskitem.itemstatus %></td>
+        <td><%= taskitem.itemtitle %></td>
+        <td><%= simple_format(taskitem.itemdetail) %></td>
+        <td><%= taskitem.itemcharge %></td>
+        <td><%= link_to '詳細表示', taskitem %></td>
+        <td><%= link_to '編集', edit_taskitem_path(taskitem) %></td>
+        <td><%= link_to '削除', taskitem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新規登録', new_taskitem_path %>

@@ -1,0 +1,32 @@
+<%= form_for(@taskitem) do |f| %>
+  <%= render 'shared/error_messages_taskitem', object: @taskitem %>
+
+  <div class="field">
+    <%= f.label :障害番号 %>
+    <%= f.text_field :itemid, class: 'form-control'%>
+  </div>
+
+  <div class="field">
+    <%= f.label :ステータス %>
+    <%= f.select :itemstatus, [["新規", "1"], ["調査中", "2"],  ["品質レビュー", "3"], ["部長レビュー", "4"],["完了", "5"] ],  :prompt => "選択してください" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :タイトル %>
+    <%= f.text_field :itemtitle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :詳細 %>
+    <%= f.text_area :itemdetail, class: 'text-left' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :担当者 %>
+    <%= f.text_field :itemcharge %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
