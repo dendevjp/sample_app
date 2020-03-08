@@ -13,7 +13,7 @@ gem 'carrierwave',             '1.2.2'
 gem 'mini_magick',             '4.7.0'
 gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
-gem 'bootstrap-sass',          '3.3.7'
+gem 'bootstrap-sass',          '3.4.1'
 gem 'jquery-rails',            '4.3.1'
 gem 'paranoia'                 
 gem "select2-rails"
@@ -21,7 +21,7 @@ gem "select2-rails"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # bootstrap
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
